@@ -1,0 +1,114 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#fd0a0407">
+
+    <TextView
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="        IMC"
+        android:id="@+id/txtViewIMC"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#17ff00"
+        android:textSize="40dp"
+        android:textStyle="bold|normal|italic"
+        android:layout_x="25dp"
+        android:layout_y="22dp"
+        android:allowUndo="false" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="41dp"
+        android:text="Peso:"
+        android:id="@+id/textViewPeso"
+        android:textColor="#ff200a"
+        android:layout_below="@+id/txtViewIMC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_x="23dp"
+        android:layout_y="94dp" />
+
+    <EditText
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPeso"
+        android:textColor="#17ff00"
+        android:textColorHighlight="#0dff0f"
+        android:textAlignment="center"
+        android:layout_below="@+id/textViewPeso"
+        android:layout_alignRight="@+id/txtAltura"
+        android:layout_alignEnd="@+id/txtAltura"
+        android:layout_alignLeft="@+id/txtAltura"
+        android:layout_alignStart="@+id/txtAltura"
+        android:inputType="numberDecimal"
+        android:layout_alignParentTop="false"
+        android:shadowColor="#25ffc900"
+        android:layout_x="75dp"
+        android:layout_y="85dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:text="Altura:"
+        android:id="@+id/textViewAltura"
+        android:textColor="#ff200a"
+        android:layout_below="@+id/txtPeso"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_x="18dp"
+        android:layout_y="149dp" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAltura"
+        android:textColor="#17ff00"
+        android:textColorHighlight="#0dff0f"
+        android:textAlignment="center"
+        android:layout_below="@+id/textViewAltura"
+        android:inputType="numberDecimal"
+        android:shadowColor="#25ffc900"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textViewAltura"
+        android:layout_toEndOf="@+id/textViewAltura"
+        android:layout_x="77dp"
+        android:layout_y="136dp" />
+
+    <Button
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:text="CALCULE!"
+        android:id="@+id/btnStart"
+        android:layout_below="@+id/txtAltura"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#17ff00"
+        android:enabled="true"
+        android:focusable="true"
+        android:elegantTextHeight="false"
+        android:shadowColor="#0f0f0f"
+        android:singleLine="false"
+        android:focusableInTouchMode="true"
+        android:background="#151515"
+        android:layout_x="-1dp"
+        android:layout_y="235dp" />
+
+    <DigitalClock
+        android:layout_width="78dp"
+        android:layout_height="28dp"
+        android:id="@+id/digitalClock"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#feff0e"
+        android:layout_x="140dp"
+        android:layout_y="498dp" />
+
+</AbsoluteLayout>

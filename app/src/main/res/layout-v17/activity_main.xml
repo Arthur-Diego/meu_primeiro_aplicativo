@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="IMC"
+        android:id="@+id/txtViewIMC"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff1a15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso:"
+        android:id="@+id/textViewPeso"
+        android:textColor="#ff200a"
+        android:layout_below="@+id/txtViewIMC"
+        android:layout_alignLeft="@+id/txtViewIMC"
+        android:layout_alignStart="@+id/txtViewIMC" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPeso"
+        android:textColor="#2c26ff"
+        android:textColorHighlight="#0dff0f"
+        android:textAlignment="center"
+        android:layout_below="@+id/textViewPeso"
+        android:layout_alignRight="@+id/txtAltura"
+        android:layout_alignEnd="@+id/txtAltura"
+        android:layout_alignLeft="@+id/txtAltura"
+        android:layout_alignStart="@+id/txtAltura" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altura:"
+        android:id="@+id/textViewAltura"
+        android:textColor="#ff200a"
+        android:layout_below="@+id/txtPeso"
+        android:layout_alignRight="@+id/txtViewIMC"
+        android:layout_alignEnd="@+id/txtViewIMC" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAltura"
+        android:textColor="#2c26ff"
+        android:textColorHighlight="#0dff0f"
+        android:textAlignment="center"
+        android:layout_below="@+id/textViewAltura"
+        android:layout_alignRight="@+id/btnStart"
+        android:layout_alignEnd="@+id/btnStart"
+        android:layout_alignLeft="@+id/btnStart"
+        android:layout_alignStart="@+id/btnStart" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULE!"
+        android:id="@+id/btnStart"
+        android:layout_below="@+id/txtAltura"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewResultado"
+        android:textSize="30dp"
+        android:textIsSelectable="true"
+        android:textColor="#2975ff"
+        android:textAlignment="gravity"
+        android:textStyle="normal|italic"
+        android:layout_below="@+id/btnStart"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
