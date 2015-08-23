@@ -33,8 +33,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         txtPeso = (EditText) findViewById(R.id.txtPeso);
         txtAltura = (EditText) findViewById(R.id.txtAltura);
 
-
-
         double peso = Double.parseDouble(String.valueOf(txtPeso.getText()));
         double altura = Double.parseDouble(String.valueOf(txtAltura.getText()));
 
@@ -94,25 +92,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         btnCalcular = (Button) findViewById(R.id.btnStart);
 
-
         btnCalcular.setOnClickListener(this);
-//            @Override
-//            public void onClick(View view) {
-//                txtPeso = (EditText) findViewById(R.id.txtPeso);
-//                txtAltura = (EditText) findViewById(R.id.txtAltura);
-//                resultado = (TextView) findViewById(R.id.textViewResultado);
-//
-//                double peso = Double.parseDouble(String.valueOf(txtPeso.getText()));
-//                double altura = Double.parseDouble(String.valueOf(txtAltura.getText()));
-//
-//                double imc = peso/(altura*altura);
-//
-//                resultado.setText(String.valueOf(imc));
-//            }
-//        });
 
     }
 
