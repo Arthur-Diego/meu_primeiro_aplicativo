@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         } else if (imc > 40) {
             AlertDialog.Builder diag = new AlertDialog.Builder(this);
             diag.setTitle("Resultado");
-            diag.setMessage("IMC: " + imcFormat + ", " + obesidadeIII);
+            diag.setMessage("IMC: " + imcFormat + ", " + obesidadeIII+"!!");
             diag.setNeutralButton("OK", null);
             diag.show();
         }
